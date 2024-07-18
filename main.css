@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* 全体 */
+.wrapper {
+  max-width: 350px;
+  margin: 0 auto;
+  color: #666
+}
+
+#header, #calc {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#header {
+  font-size: 24px;
+  padding: 1rem;
+}
+
+/* ディスプレイとCボタンのコンテナ */
+.topline-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* テキスト */
+input {
+  box-sizing: border-box;
+  width: calc(75% - 3px);
+  height: calc(3.5rem - 3px);
+  font-size: 1.6rem;
+  text-align: right;
+  padding: 0 0.75rem;
+}
+
+/* Cボタン */
+#clear {
+  width: 25%;
+  height: 3.5rem;
+  font-size: 18px;
+  color: #333;
+  border-style: solid;
+  background-color: #9999ff;
+  border-color: #AAAAFF #6666FF #4444FF #CCCCFF;
+}
+
+#clear:hover {
+  background-color: #8888e3;
+}
+
+/* ボタン関係 */
+button {
+  font-size: 18px;
+  width: 100%;
+  height: 3.5rem;
+  color: #333;
+  border-style: solid;
+  background-color: #9999ff;
+  border-color: #AAAAFF #6666FF #4444FF #CCCCFF;
+}
+
+button:hover {
+  background-color: #8888e3;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}

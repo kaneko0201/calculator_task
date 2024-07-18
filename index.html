@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>calculator</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h1 id="header">電卓</h1>
+      <div id="calc">
+        <div class="topline-container">
+          <input readonly id="result" type="text" value="0">
+          <button id="clear" onclick="c_click()">C</button>
+        </div>
+        <div class="button-container">
+          <button onclick="num_click(this.innerHTML)">7</button>
+          <button onclick="num_click(this.innerHTML)">8</button>
+          <button onclick="num_click(this.innerHTML)">9</button>
+          <button onclick="ope_click(this.innerHTML)">÷</button>
+
+          <button onclick="num_click(this.innerHTML)">4</button>
+          <button onclick="num_click(this.innerHTML)">5</button>
+          <button onclick="num_click(this.innerHTML)">6</button>
+          <button onclick="ope_click(this.innerHTML)">×</button>
+
+          <button onclick="num_click(this.innerHTML)">1</button>
+          <button onclick="num_click(this.innerHTML)">2</button>
+          <button onclick="num_click(this.innerHTML)">3</button>
+          <button onclick="ope_click(this.innerHTML)">-</button>
+
+          <button onclick="num_click(this.innerHTML)">0</button>
+          <button onclick="num_click(this.innerHTML)">.</button>
+          <button onclick="equal_click()">=</button>
+          <button onclick="ope_click(this.innerHTML)">+</button>
+        </div>
+      </div>
+     <script src="main.js"></script>
+    </div>
+  </body>
+</html>
